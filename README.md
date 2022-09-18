@@ -19,26 +19,16 @@ The following animation demonstrates the application functionality:
 
 - When daily planner is opened the current date and time is shown at the top
 - As I scroll down hourly time blocks are presented for a standard business hours
-- 
+- each timeblock is color coded to indicate whether it is in the past, present, or future (like the picture below):
 
+![color-coded calendar with colors for each hour of a business day.](./Assets/Images/hourswithcolor.jpg)
 
+- clicking into a timeblock allows you enter a new event
+- the save button style is specified by the fontawesome
+- clicking the save button stores the value of the event into localstorage
+- upton refresh calendar retrieves any saved events previously stored in localstorage. (like the picture below)
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
+![events entered in timeblock showing localstorage that has stored the events](./Assets/Images/showstorage.jpg)
 
 
 ## Final Submission
